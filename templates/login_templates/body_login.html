@@ -1,0 +1,22 @@
+<body>
+    <div class="main">  
+        <input type="checkbox" id="chk" aria-hidden="true">
+   
+        <div class="signup">
+            <form method="POST" action="{{ url_for('login') }}">
+    
+                <label for="chk" aria-hidden="true"><center>SISTA</center></label>
+                
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button type="submit" name="submit_login">Masuk</button>
+            </form>
+        </div>
+
+
+
+
+    {{messages}}
+
+</body>
+</html>
